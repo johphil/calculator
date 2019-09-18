@@ -56,10 +56,18 @@ int main()
 			printf("\nsqrt( %.2f ) = %.2f", n1, sqrt(n1));
     		break;
     	case '6':	//Power
-    		
+    		printf("\nEnter the number: ");
+			n1 = GetNumber();
+    		printf("Enter the power: ");
+			n2 = GetNumber();
+    		printf("\n%.2f ^%.2f = %.2f",n1, n2, pow(n1,n2));
     		break;
     	case '7':	//Modulo
-    		
+    		printf("\nEnter first number: ");
+			n1 = GetNumber();
+    		printf("Enter second number: ");
+			n2 = GetNumber();
+    		printf("\nRemainder of %.2f / %.2f = %.2f",n1, n2, remainder(n1,n2));
     		break;
     	default:	//Invalid input
     		printf("The operation you have chosen does not exist!");
