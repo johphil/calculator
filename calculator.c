@@ -22,21 +22,18 @@ int main()
     switch(operation)
     {
     	case '1':	//Addition
-		printf("\nEnter first number: ");
-		n1 = GetNumber();
+			printf("\nEnter first number: ");
+			n1 = GetNumber();
     		printf("Enter second number: ");
-		n2 = GetNumber();
+			n2 = GetNumber();
     		printf("\n%.1lf + %.1lf = %.1lf",n1, n2, n1 + n2);
-    		break;
     		break;
     	case '2':	//Subtraction
     		printf("\nEnter first number: ");
-		n1 = GetNumber();
+			n1 = GetNumber();
     		printf("Enter second number: ");
-		n2 = GetNumber();
+			n2 = GetNumber();
     		printf("\n%.2f - %.2f = %.2f",n1, n2, n1 - n2);
-    		
-    		break;
     		break;
     	case '3':	//Multiplication
     		
