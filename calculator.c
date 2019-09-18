@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+double GetNumber();
+
 int main()
 {
     char operation;
     double n1,n2;
-	
-	printf("[ Calculator ] by Group 04\n\n");
+
+    printf("[ Calculator ] by Group 04\n\n");
     printf("[1] Addition of two numbers\n");
     printf("[2] Subtraction of two numbers\n");
     printf("[3] Multiplication of two numbers\n");
@@ -20,9 +22,21 @@ int main()
     switch(operation)
     {
     	case '1':	//Addition
+		printf("\nEnter first number: ");
+		n1 = GetNumber();
+    		printf("Enter second number: ");
+		n2 = GetNumber();
+    		printf("\n%.1lf + %.1lf = %.1lf",n1, n2, n1 + n2);
+    		break;
     		break;
     	case '2':	//Subtraction
+    		printf("\nEnter first number: ");
+		n1 = GetNumber();
+    		printf("Enter second number: ");
+		n2 = GetNumber();
+    		printf("\n%.2f - %.2f = %.2f",n1, n2, n1 - n2);
     		
+    		break;
     		break;
     	case '3':	//Multiplication
     		
@@ -46,3 +60,14 @@ int main()
   return 0;
 }
 
+double GetNumber()
+{
+	double number;
+	if (scanf("%lf",&number) != 1)
+	{
+		printf("Invalid input! Program terminated.");
+		exit(0);
+	}
+	else
+		return number;
+}
