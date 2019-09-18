@@ -8,7 +8,7 @@ int main()
     char operation;
     double n1,n2;
 
-    printf("[ Calculator ] by Group 04\n\n");
+    printf("[ Calculator ] by Group 09\n\n");
     printf("[1] Addition of two numbers\n");
     printf("[2] Subtraction of two numbers\n");
     printf("[3] Multiplication of two numbers\n");
@@ -24,25 +24,35 @@ int main()
     	case '1':	//Addition
 			printf("\nEnter first number: ");
 			n1 = GetNumber();
-    		printf("Enter second number: ");
+    		printf("\nEnter second number: ");
 			n2 = GetNumber();
     		printf("\n%.1lf + %.1lf = %.1lf",n1, n2, n1 + n2);
     		break;
     	case '2':	//Subtraction
     		printf("\nEnter first number: ");
 			n1 = GetNumber();
-    		printf("Enter second number: ");
+    		printf("\nEnter second number: ");
 			n2 = GetNumber();
     		printf("\n%.2f - %.2f = %.2f",n1, n2, n1 - n2);
     		break;
     	case '3':	//Multiplication
-    		
+    		printf("\nEnter first number: ");
+			n1 = GetNumber();
+			printf("\nEnter second number: ");
+			n2 = GetNumber();
+			printf("\n%.2f * %.2f = %.2f", n1, n2, n1 * n2);
     		break;
     	case '4':	//Division
-    		
+    		printf("\nEnter first number: ");
+			n1 = GetNumber();
+			printf("\nEnter second number: ");
+			n2 = GetNumber();
+			printf("\n%.2f / %.2f = %.2f", n1, n2, n1 / n2);
     		break;
     	case '5':	//Square Root
-    		
+    		printf("\nEnter first number: ");
+			n1 = GetNumber();
+			printf("\nsqrt( %.2f ) = %.2f", n1, sqrt(n1));
     		break;
     	case '6':	//Power
     		
